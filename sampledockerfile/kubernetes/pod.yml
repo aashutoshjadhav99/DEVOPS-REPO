@@ -1,0 +1,13 @@
+apiversion: v1
+kind: Pod
+metadata:
+    name: nginxpod
+    labels:
+      app: webapp
+      purpose: to create new app
+spec:
+  containers:
+     -name: nginxpod 
+     image: nginx:latest
+     ports:
+       -container port: 80
